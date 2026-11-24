@@ -1,0 +1,1 @@
+<div class="card"><h1>This demo isn’t available</h1><p>Demos are deleted after <?= demo_hours() ?> hours. You can build a new one in a few seconds.</p><p><a class="btn primary" href="/demo">Build a demo</a></p></div>

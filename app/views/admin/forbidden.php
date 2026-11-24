@@ -1,0 +1,1 @@
+<h1>Not allowed</h1><p class="muted">Your role doesn’t include this page. Ask the Admin if you need access.</p><p><a class="btn ghost" href="<?= ($user['role'] ?? '') === 'kitchen' ? '/admin/kitchen' : '/admin' ?>">Back</a></p>

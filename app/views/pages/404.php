@@ -1,0 +1,1 @@
+<section class="s"><div class="wrap" style="max-width:640px"><h1>Page not found</h1><p class="muted">That page doesn’t exist or has moved.</p><p><a class="btn primary" href="/">Home</a> <a class="btn ghost" href="/menu">Menu</a></p></div></section>

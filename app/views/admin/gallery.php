@@ -1,0 +1,7 @@
+<h1>Gallery</h1><p class="muted">Photos on the website’s Gallery page. Location and camera data are removed when you upload.</p>
+<form method="post" action="/admin/gallery" enctype="multipart/form-data" class="card form" style="margin-bottom:22px"><?= csrf_field() ?><input type="hidden" name="action" value="add">
+  <div class="grid g2"><div class="field"><label for="gp">Photo</label><input id="gp" name="photo" type="file" accept="image/jpeg,image/png,image/webp" required></div><div class="field"><label for="gc">Caption <span class="hint">(also read aloud by screen readers)</span></label><input id="gc" name="caption" maxlength="160"></div></div>
+  <button class="btn primary">Add photo</button></form>
+<?php if (!$photos): ?><div class="empty">No photos yet.</div><?php else: ?><div class="grid g4"><?php foreach ($photos as $p): ?>
+<figure class="card" style="margin:0;padding:10px"><img src="<?= e(media_url('gallery', $p['file'])) ?>" alt="<?= e($p['caption'] ?? '') ?>" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:10px"><figcaption class="muted" style="margin:8px 0"><?= e($p['caption'] ?? 'No caption') ?></figcaption>
+<form method="post" action="/admin/gallery" data-confirm="Remove this photo?"><?= csrf_field() ?><input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="<?= (int)$p['id'] ?>"><button class="btn danger sm">Remove</button></form></figure><?php endforeach ?></div><?php endif ?>

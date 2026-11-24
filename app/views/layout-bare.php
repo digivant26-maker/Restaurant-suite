@@ -1,0 +1,3 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow">
+<title><?= e($title ?? 'Admin') ?> | <?= e(shop()['name']) ?></title><link rel="icon" href="<?= brand_logo_url() ?>"><link rel="stylesheet" href="<?= asset('css/admin.css') ?>"><link rel="stylesheet" href="<?= brand_css_url() ?>"></head>
+<body><?php if (tenant_id() && path() !== '/demo') require ROOT . '/app/views/demo/banner.php'; ?><main class="login"><?= $content ?></main><script src="<?= asset('js/site.js') ?>" defer></script></body></html>
