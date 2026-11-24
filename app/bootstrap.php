@@ -29,6 +29,7 @@ require ROOT . '/app/reservations.php';
 require ROOT . '/app/events.php';
 require ROOT . '/app/demo.php';
 require ROOT . '/app/demo-seed.php';
+require ROOT . '/app/product.php';
 
 function site_url(): string { return rtrim((string)cfg('site_url', 'http://localhost'), '/'); }
 /** True only on the public live address (the host of site_url). Everything else is kept out of search engines. */

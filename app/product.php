@@ -1,0 +1,45 @@
+<?php
+/** Words for the product page on DIGIVANT's demo site (front page when 'demo_builder' is on). Keep every claim true of what's built. */
+const PRODUCT_PAGE = [
+    'name' => 'Restaurant Suite',
+    'title' => 'Website, online ordering and reservations for restaurants and sports bars',
+    'audience' => 'For restaurants, bars and sports bars',
+    'h1' => 'Your own website, online ordering and reservations — under your name',
+    'lead' => 'One system for your menu, pickup orders, table bookings, events and the games on your screens, with a kitchen screen for your staff. Branded with your name, colours and logo.',
+    'demo_note' => 'The free demo takes about a minute: enter your name and colour and get your own working copy with sample data for 48 hours.',
+    'hero' => 'website.jpg', 'phone' => 'phone-menu.jpg',
+    'features_h' => 'Everything a busy bar or restaurant needs online',
+    'features' => [
+        ['A website that’s yours', 'Your name, colours and logo on every page: home, menu, events, games, gallery, private events, careers and contact. It works on phones.'],
+        ['Online pickup ordering', 'Guests order from your menu and pick a pickup time your kitchen can actually make. Orders come straight to you. They pay at pickup; card payments are coming next.'],
+        ['Kitchen screen', 'New → Preparing → Ready → Picked up, with notes and allergies highlighted and late orders in red. Guests who leave an email get a message when their food is ready.'],
+        ['Table reservations', 'Guests choose a day, party size and time. You set the seats per time slot so you never overbook, then confirm, decline, seat or mark no-shows.'],
+        ['Games on your screens', 'List the games you’re showing, which screens and whether the sound is on. They appear on your home page and games page.'],
+        ['A menu you control', 'Categories, prices, photos and tags like spicy or vegetarian. Mark an item sold out with one tap, and it updates online straight away.'],
+    ],
+    'tour' => [
+        ['The kitchen screen', 'Every pickup order lands on one screen your kitchen can read from across the room.', 'kitchen.jpg', 'Kitchen screen with orders in New, Preparing and Ready columns',
+            ['Big tickets with quantities, notes and allergies', 'One tap to move an order along', 'Refreshes itself every 20 seconds']],
+        ['Today at a glance', 'Managers see new orders, table requests, guests booked, today’s online sales, tonight’s games and what’s sold out.', 'today.jpg', 'Staff dashboard showing today’s orders, tables and games',
+            ['Requests waiting for an answer stand out', 'Phone bookings in a few taps', 'Roles: Admin, Manager, Front of house, Kitchen']],
+        ['Reservations without overbooking', 'Set your hours, seats per time slot and largest party. Guests only see times with room.', 'reservations.jpg', 'Reservations page with requests to confirm and the day’s tables',
+            ['Confirm or decline with a reason; guests are emailed', 'Guests can cancel from their own link', 'Optional automatic confirmation']],
+        ['Your menu, your way', 'Edit items, prices and photos yourself. Photos are cleaned of hidden location data when you upload them.', 'menu-editor.jpg', 'Menu editor with categories, items and sold-out buttons',
+            ['Feature favorites on the home page', 'Choose what can be ordered online', 'Prices on past orders never change']],
+    ],
+    'steps' => [
+        ['Try the demo', 'Enter your restaurant’s name and colour. In about a minute you have your own working copy with a sample menu, orders and bookings.'],
+        ['We set it up for you', 'We add your menu, logo, hours and photos, connect your email and put it on your own web address.'],
+        ['Go live', 'Share the link, put it on your social pages and Google profile, and start taking orders and reservations.'],
+    ],
+    'faq' => [
+        ['What does it cost?', 'Pricing depends on what you need. Contact us and we’ll give you a clear quote, with no obligation.'],
+        ['Can I try it first?', 'Yes. Build a free demo with your name and colour. It’s private to you, never emails your guests, and is deleted after 48 hours.'],
+        ['Do guests pay online?', 'Right now guests pay when they pick up. Card payments online are planned as the next step.'],
+        ['Can I use my own web address?', 'Yes. Each restaurant gets its own copy of the system on its own address, with its own data.'],
+        ['Do I need technical skills?', 'No. You manage the menu, events, games and settings from simple screens, and we handle the setup.'],
+        ['Does it work on phones?', 'Yes. The website, ordering and reservations work on phones, and the staff side works on tablets and phones too.'],
+    ],
+    'cta_h' => 'See it with your own name on it',
+    'cta_t' => 'Build a free demo in about a minute, or talk to us about getting your restaurant set up.',
+];

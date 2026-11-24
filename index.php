@@ -29,7 +29,11 @@ $method = $_SERVER['REQUEST_METHOD'] ?? 'GET';
 
 // Live demo builder: picks the visitor's demo shop (must run before any session starts).
 demo_boot($path, $method);
-if (demo_enabled() && tenant_id() === null && !str_starts_with($path, '/admin') && !str_starts_with($path, '/brand')) redirect('/demo');
+// On DIGIVANT's demo site the front page is the product page; other public addresses lead back to it.
+if (demo_enabled() && tenant_id() === null && !str_starts_with($path, '/admin') && !str_starts_with($path, '/brand')) {
+    if ($path === '/') { view('demo/landing', [], null); exit; }
+    redirect('/');
+}
 
 // Only the live address is indexed by search engines; the test site and any other host stay hidden.
 if (!is_live_host()) header('X-Robots-Tag: noindex, nofollow');

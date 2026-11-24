@@ -1,6 +1,7 @@
 <?php /** Demo builder: the visitor enters their shop details and sees a live preview before creating the demo. */ ?>
 <div class="demo-build">
   <section class="card demo-form">
+    <?php if (!$current && defined('PRODUCT_PAGE')): ?><p style="margin:0 0 8px"><a href="/">← About <?= e(PRODUCT_PAGE['name']) ?></a></p><?php endif ?>
     <p class="eyebrow">Live demo · free · <?= demo_hours() ?> hours</p>
     <h1>See your restaurant’s website and ordering system</h1>
     <p class="hint">Enter your restaurant’s name and colour, add a logo if you like, and get a working demo in seconds: a public website with your menu, online pickup ordering, table reservations, events and the games on your screens — plus the staff side with a kitchen screen. Filled with fictional sample data.</p>
